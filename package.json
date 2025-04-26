@@ -17,12 +17,17 @@
   "sideEffects": false,
   "exports": {
     ".": "./dist/index.mjs",
+    "./cli": "./dist/cli.mjs",
     "./package.json": "./package.json"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
+  "bin": {
+    "ng-packit": "./bin/ng-packit.mjs"
+  },
   "files": [
+    "bin",
     "dist"
   ],
   "scripts": {
